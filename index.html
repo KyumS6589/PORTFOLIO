@@ -1,0 +1,112 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Himanshu Kandpal — Professional Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {margin:0;padding:0;font-family:Inter, sans-serif;min-height:100%;}
+    body {
+      background: linear-gradient(270deg, #1e3c72, #2a5298, #0f2027, #203a43, #2c5364);
+      background-size: 1000% 1000%;
+      animation: bgShift 30s ease infinite;
+      color: #fff;
+    }
+    @keyframes bgShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header {padding: 20px;text-align:center;}
+    header h1 {margin:0;font-size:2em;}
+    nav {display:flex;justify-content:center;gap:20px;margin-top:10px;flex-wrap:wrap;}
+    nav a {color:#fff;text-decoration:none;font-weight:600;padding:8px 14px;border-radius:8px;background:rgba(255,255,255,0.1);}
+    nav a:hover {background:rgba(255,255,255,0.2);}
+    .tab-section {display:none;padding:20px;max-width:1100px;margin:auto;background:rgba(0,0,0,0.35);border-radius:12px;}
+    .tab-section.active {display:block;}
+    h2 {border-bottom: 2px solid rgba(255,255,255,0.3);padding-bottom:5px;}
+    ul {list-style:none;padding:0;}
+    li {margin-bottom:10px;}
+    .meta {color:rgba(255,255,255,0.7);font-size:0.95em;}
+  </style>
+  <script>
+    function showTab(tabId){
+      document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      showTab('experience');
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Himanshu Kandpal</h1>
+    <p class="meta">Mathematician • Developer • Creative Artist • Research Enthusiast</p>
+    <nav>
+      <a href="#" onclick="showTab('experience')">Experience</a>
+      <a href="#" onclick="showTab('projects')">Projects</a>
+      <a href="#" onclick="showTab('certificates')">Certificates</a>
+      <a href="#" onclick="showTab('exams')">Exam Experience</a>
+      <a href="#" onclick="showTab('skills')">Skills</a>
+    </nav>
+  </header> <div id="experience" class="tab-section">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Tata Cybersecurity Security Analyst Simulation (2025)</strong> — Completed IAM-based job simulation with TCS via Forage; gained expertise in cybersecurity best practices and documentation.</li>
+      <li><strong>Founder & Maths Teacher — UR Coaching Center</strong> — Taught all subjects (Grade 1–8) and Mathematics (Grade 9–12 & B.Sc. level) with personalized lesson plans and assessments.</li>
+      <li><strong>Maths Teacher — R.B.S. Public School</strong> — Delivered concept-focused lessons in Algebra, Geometry, Statistics; collaborated with parents and faculty.</li>
+      <li><strong>Computer Teacher — R.B.S. Public School</strong> — Taught MS Office, HTML, Internet basics, Scratch programming.</li>
+      <li><strong>Maths Teacher — Anand Public School</strong> — Concept-based classes, quizzes, and performance tracking for Grades 1–8.</li>
+      <li><strong>Hackathon Participant (Web Development, 2025)</strong> — Built a functional homeopathy e-commerce website with consultation in 4 hours.</li>
+    </ul>
+  </div> <div id="projects" class="tab-section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Secret Message Encoder (2025)</strong> — Tkinter GUI app for Base64 encryption/decryption with SHA-256 password hashing, error handling, and custom icons.</li>
+      <li><strong>HomeoCart E-Commerce & Consultation Website (2025)</strong> — HTML/CSS/JS; product display, user login, shopping cart, and doctor booking features.</li>
+      <li><strong>TrackSafe Desktop App</strong> — Local-first mobile tracking info management tool with optional cloud backup.</li>
+      <li><strong>Town Taxi Booking Website</strong> — Full-stack taxi booking platform with OTP login and payments integration.</li>
+    </ul>
+  </div> <div id="certificates" class="tab-section">
+    <h2>Certificates</h2>
+    <ul>
+      <li>Internship Common Aptitude Test (ICAT) — 2025</li>
+      <li>Cyber Security (MeitY, Govt. of India) — 2025</li>
+      <li>Artificial Intelligence Seminar (GICT Haldwani) — 2025</li>
+      <li>Basic Concept of Mathematics & Quantum Mechanics Workshop — 2025</li>
+      <li>Madhava Mathematics Competition — 2025, 2023</li>
+      <li>Bhartiya Sanskriti Gyan Pariksha — 2023, 2017</li>
+      <li>NSS 'B' Certificate — 2022</li>
+      <li>Basic Computer Course — 2022</li>
+      <li>National Voter’s Day Participation — 2018</li>
+      <li>Balprahari Magazine Publication — 2017</li>
+      <li>Scout and Guide — 2016</li>
+    </ul>
+  </div> <div id="exams" class="tab-section">
+    <h2>Exam Experience</h2>
+    <ul>
+      <li>UET PG Mathematics Entrance (HNBGU Srinagar) — 2025</li>
+      <li>IIT JAM (Mathematics & Physics) — 2025</li>
+      <li>GATE (Mathematics & Physics) — 2025</li>
+      <li>NBHM Exam — 2024 (Qualified interview round)</li>
+      <li>NDA Exam — 2022 (I), 2023 (I & II)</li>
+    </ul>
+  </div> <div id="skills" class="tab-section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Personality Development, Communication, Adaptability, Creativity & Problem-Solving</li>
+      <li>Team Leadership, Photography, Photo & Video Editing</li>
+      <li>CMS, SEO, SEM, Business Analytics</li>
+      <li>Artificial Intelligence, Web Development, Ethical Hacking</li>
+    </ul>
+    <h2>Languages</h2>
+    <p class="meta">Kumauni, Hindi, English</p>
+    <h2>Interests</h2>
+    <p class="meta">Sports, Music, Reading</p>
+    <h2>Social</h2>
+    <p class="meta">LinkedIn: <a href="https://in.linkedin.com/in/himanshu-kandpal-050b77312" target="_blank">Profile</a> | GitHub: <a href="https://github.com/KyumS6589" target="_blank">Repo</a></p>
+  </div>
+</body>
+</html>
